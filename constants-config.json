@@ -1,6 +1,6 @@
 {
-	"database-id": "169b6e632b7448529120599281265ac5",
-	"author": "",
+	"database-id": "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",
+	"author": "Jon D",
 	"tracking": {
 		"google-analytics": {
 			"use-ga": true,
@@ -35,7 +35,7 @@
 	"custom-domain": "",
 	"base-path": "",
 	"giscus": {
-		"data-repo": "nerdymomocat-templates/webtrotion-astro-notion-cms-website-blog",
+		"data-repo": "",
 		"data-repo-id": "R_kgDOK0FuUA",
 		"data-category": "Announcements",
 		"data-category-id": "DIC_kwDOK0FuUM4CbZ5A",
