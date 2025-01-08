@@ -73,7 +73,7 @@
 		"shiki-transform": "<<shiki-transform>>",
 		"table": "<<🗂️>>"
 	},
-	"recent-posts-on-home-page": false,
+	"recent-posts-on-home-page": true,
 	"theme": {
 		"colors": {
 			"bg": {
