@@ -155,11 +155,11 @@ export default {
 		plugin(function ({ addComponents }) {
 			addComponents({
 				".site-page-link": {
-					"@apply underline decoration-wavy decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline":
+					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline":
 						{},
 				},
 				".title": {
-					"@apply text-5xl font-semibold text-accent-2": {},
+					"@apply text-4xl sm:text-5xl/8 tracking-tight font-bold text-accent-2": {},
 				},
 			});
 		}),
