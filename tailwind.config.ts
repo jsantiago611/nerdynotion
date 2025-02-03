@@ -159,7 +159,7 @@ export default {
 						{},
 				},
 				".title": {
-					"@apply text-3xl font-bold text-accent-2": {},
+					"@apply text-5xl font-semibold text-accent-2": {},
 				},
 			});
 		}),
