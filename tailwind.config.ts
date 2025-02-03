@@ -159,7 +159,7 @@ export default {
 						{},
 				},
 				".title": {
-					"@apply text-4xl sm:text-5xl tracking-tight font-bold text-accent-2 leading-[1.1] mb-5!": {},
+					"@apply text-4xl sm:text-5xl tracking-tight font-bold text-accent-2 leading-[1.1] !mb-5": {},
 				},
 			});
 		}),
