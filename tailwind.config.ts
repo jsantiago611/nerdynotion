@@ -138,10 +138,10 @@ export default {
 				},
 			},
 			fontFamily: {
-				// Use Untitled Sans as the sans font (with fallbacks from JSON)...
+				// Set Untitled Sans as the sans font
 				sans: ['"Untitled Sans"', ...fontFamilySans],
 				serif: fontFamilySerif,
-				// Use Dinamit Bold as the mono font (with fallbacks from JSON)...
+				// Set Dinamit Bold as the mono font
 				mono: ['"Dinamit Bold"', ...fontFamilyMono],
 			},
 			transitionProperty: {
@@ -165,15 +165,33 @@ export default {
 		// Use Tailwind's addBase to include the @font-face rules for our custom fonts.
 		plugin(function ({ addBase }) {
 			addBase([
+				// Dinamit font variants
 				{
 					"@font-face": {
 						fontFamily: "Dinamit Bold",
 						src: 'url(/fonts/Dinamit_Bold.woff2) format("woff2")',
-						// Since this font file is named Bold, we assign it a bold weight.
-						fontWeight: "bold",
+						// This variant is used as the mono font.
+						fontWeight: "700",
 						fontStyle: "normal",
 					},
 				},
+				{
+					"@font-face": {
+						fontFamily: "Dinamit Regular",
+						src: 'url(/fonts/Dinamit_Regular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Dinamit Extralight",
+						src: 'url(/fonts/Dinamit_Extralight.woff2) format("woff2")',
+						fontWeight: "200",
+						fontStyle: "normal",
+					},
+				},
+				// Untitled Sans font variants
 				{
 					"@font-face": {
 						fontFamily: "Untitled Sans",
