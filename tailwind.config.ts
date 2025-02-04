@@ -142,7 +142,7 @@ export default {
 				sans: ['"Untitled Sans"', ...fontFamilySans],
 				serif: fontFamilySerif,
 				// Set Dinamit Bold as the mono font
-				mono: ['"Dinamit Bold"', ...fontFamilyMono],
+				mono: ['"Dinamit"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -168,7 +168,7 @@ export default {
 				// Dinamit font variants
 				{
 					"@font-face": {
-						fontFamily: "Dinamit Bold",
+						fontFamily: "Dinamit",
 						src: 'url(/fonts/Dinamit_Bold.woff2) format("woff2")',
 						// This variant is used as the mono font.
 						fontWeight: "700",
@@ -177,7 +177,7 @@ export default {
 				},
 				{
 					"@font-face": {
-						fontFamily: "Dinamit Regular",
+						fontFamily: "Dinamit",
 						src: 'url(/fonts/Dinamit_Regular.woff2) format("woff2")',
 						fontWeight: "400",
 						fontStyle: "normal",
@@ -185,7 +185,7 @@ export default {
 				},
 				{
 					"@font-face": {
-						fontFamily: "Dinamit Extralight",
+						fontFamily: "Dinamit",
 						src: 'url(/fonts/Dinamit_Extralight.woff2) format("woff2")',
 						fontWeight: "200",
 						fontStyle: "normal",
