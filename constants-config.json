@@ -102,7 +102,7 @@
 			}
 		},
     "fontfamily-google-fonts": {
-      "combined-url": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:wght@200..900&display=swap",
+      "combined-url": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap",
       "sans-font-name": "Inter",
       "serif-font-name": "Newsreader",
       "mono-font-name": "Roboto\\ Mono"
