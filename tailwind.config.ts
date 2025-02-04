@@ -25,7 +25,7 @@ export default {
 	corePlugins: {
 		// disable aspect ratio as per docs -> @tailwindcss/aspect-ratio
 		aspectRatio: false,
-		// disable some core plugins as they are included in the css, even when unused
+		// disable some core plugins as they are included in the CSS even when unused
 		touchAction: false,
 		ringOffsetWidth: false,
 		ringOffsetColor: false,
@@ -34,7 +34,6 @@ export default {
 		textOpacity: false,
 		fontVariantNumeric: false,
 	},
-
 	theme: {
 		extend: {
 			screens: {
@@ -52,8 +51,8 @@ export default {
 					"txt-light": "#787774",
 					"txt-dark": "#9B9B9B",
 					"bg-light": "#F1F1EF",
-					"bg-dark": "#2F2F2F", //this is notion's choice
-					// 'bg-dark': '#566670', //this is my choice,
+					"bg-dark": "#2F2F2F", // this is Notion's choice
+					// 'bg-dark': '#566670', // this is my choice,
 					"bg-tag-light": "#E3E2E0",
 					"bg-tag-dark": "#5A5A5A",
 					"table-header-bg-light": "#F7F6F3",
@@ -139,8 +138,8 @@ export default {
 				},
 			},
 			fontFamily: {
-				// Add any custom fonts here
-				sans: fontFamilySans,
+				// Add custom fonts here. "Dinamit Bold" will be used in the sans stack.
+				sans: ['Dinamit Bold', ...fontFamilySans],
 				serif: fontFamilySerif,
 				mono: fontFamilyMono,
 			},
@@ -155,11 +154,21 @@ export default {
 		plugin(function ({ addComponents }) {
 			addComponents({
 				".site-page-link": {
-					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline":
-						{},
+					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline": {},
 				},
 				".title": {
 					"@apply text-4xl sm:text-5xl tracking-tight font-bold text-accent-2 leading-[1.1] !mb-5": {},
+				},
+			});
+		}),
+		// Use Tailwind's addBase to include the @font-face rule for your custom font.
+		plugin(function ({ addBase }) {
+			addBase({
+				"@font-face": {
+					fontFamily: "Dinamit Bold",
+					src: 'url(/fonts/Dinamit_Bold.woff2) format("woff2")',
+					fontWeight: "bold",
+					fontStyle: "normal",
 				},
 			});
 		}),
