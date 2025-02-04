@@ -138,10 +138,11 @@ export default {
 				},
 			},
 			fontFamily: {
-				// Add custom fonts here. "Dinamit Bold" will be used in the sans stack.
-				sans: ['Dinamit Bold', ...fontFamilySans],
+				// Use Untitled Sans as the sans font (with fallbacks from JSON)...
+				sans: ['"Untitled Sans"', ...fontFamilySans],
 				serif: fontFamilySerif,
-				mono: fontFamilyMono,
+				// Use Dinamit Bold as the mono font (with fallbacks from JSON)...
+				mono: ['"Dinamit Bold"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -161,16 +162,67 @@ export default {
 				},
 			});
 		}),
-		// Use Tailwind's addBase to include the @font-face rule for your custom font.
+		// Use Tailwind's addBase to include the @font-face rules for our custom fonts.
 		plugin(function ({ addBase }) {
-			addBase({
-				"@font-face": {
-					fontFamily: "Dinamit Bold",
-					src: 'url(/fonts/Dinamit_Bold.woff2) format("woff2")',
-					fontWeight: "bold",
-					fontStyle: "normal",
+			addBase([
+				{
+					"@font-face": {
+						fontFamily: "Dinamit Bold",
+						src: 'url(/fonts/Dinamit_Bold.woff2) format("woff2")',
+						// Since this font file is named Bold, we assign it a bold weight.
+						fontWeight: "bold",
+						fontStyle: "normal",
+					},
 				},
-			});
+				{
+					"@font-face": {
+						fontFamily: "Untitled Sans",
+						src: 'url(/fonts/UntitledSansWeb-Light.woff2) format("woff2")',
+						fontWeight: "300",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Untitled Sans",
+						src: 'url(/fonts/UntitledSansWeb-Regular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Untitled Sans",
+						src: 'url(/fonts/UntitledSansWeb-RegularItalic.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "italic",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Untitled Sans",
+						src: 'url(/fonts/UntitledSansWeb-Medium.woff2) format("woff2")',
+						fontWeight: "500",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Untitled Sans",
+						src: 'url(/fonts/UntitledSansWeb-Bold.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Untitled Sans",
+						src: 'url(/fonts/UntitledSansWeb-Black.woff2) format("woff2")',
+						fontWeight: "900",
+						fontStyle: "normal",
+					},
+				},
+			]);
 		}),
 	],
 } satisfies Config;
