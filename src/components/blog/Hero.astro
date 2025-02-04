@@ -25,12 +25,12 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 </h1>
 {post.Excerpt && <q class="mb-2 block italic">{post.Excerpt}</q>}
 <div class="flex max-w-full flex-wrap items-center gap-x-3 gap-y-2">
-	<p class="font-semibold font-mono uppercase">
+	<p class="font-normal font-mono uppercase">
 		<FormattedDate date={new Date(post.Date)} dateTimeOptions={dateTimeOptions} />
 	</p>
 	{
 		post.Date && post.LastUpdatedDate && areDifferentDates(post.Date, post.LastUpdatedDate) && (
-			<span class="rounded-lg bg-quote/10 p-1 text-quote uppercase font-mono">
+			<span class="rounded-lg bg-quote/10 p-1 text-quote uppercase font-mono font-normal">
 				{"Last Updated:"}
 				<FormattedDate
 					class="ms-1"
