@@ -142,7 +142,7 @@ export default {
 				sans: ['"Untitled Sans"', ...fontFamilySans],
 				serif: fontFamilySerif,
 				// Set Dinamit Bold as the mono font
-				mono: ['"Dinamit"', ...fontFamilyMono],
+				mono: ['"Untitled Sans"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
