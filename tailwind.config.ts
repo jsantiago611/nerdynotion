@@ -233,7 +233,7 @@ export default {
 					},
 				},
 				{
-					"@font-face": {
+					"@font-face": { 
 						fontFamily: "Untitled Sans",
 						src: 'url(/fonts/UntitledSansWeb-Black.woff2) format("woff2")',
 						fontWeight: "900",
