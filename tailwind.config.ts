@@ -156,14 +156,13 @@ export default {
 					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline": {},
 				},
 				".title": {
-					"@apply text-size-step-4 tracking-tight font-bold text-accent-2 leading-[1.1] !mb-5": {},
+					"@apply text-size-step-3 tracking-tight font-normal text-accent-2 leading-[1.1] !mb-5": {},
 				},
 			});
 		}),
 		// Add base styles for existing Martina font variants and new Family font variants.
 		plugin(function ({ addBase }) {
 			addBase([
-				// Existing Martina font declarations
 				{
 					"@font-face": {
 						fontFamily: "Martina",
@@ -196,7 +195,6 @@ export default {
 						fontStyle: "italic",
 					},
 				},
-				// New Family font declarations
 				{
 					"@font-face": {
 						fontFamily: "Family",
@@ -262,6 +260,14 @@ export default {
 					},
 				},
 			]);
+		}),
+		// Set the main body text to use var(--size-step-0)
+		plugin(function ({ addBase }) {
+			addBase({
+				body: {
+					fontSize: "var(--size-step-0)",
+				},
+			});
 		}),
 	],
 } satisfies Config;
