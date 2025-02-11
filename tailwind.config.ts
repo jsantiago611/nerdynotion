@@ -160,7 +160,7 @@ export default {
 					"@apply text-size-step-3 tracking-tight font-bold text-accent-2 leading-[1.1] !mb-5": {},
 				},
         "body": {
-          "@apply text-size-step-0": {},
+          "@apply text-size-step--1": {},
         }
 			});
 		}),
