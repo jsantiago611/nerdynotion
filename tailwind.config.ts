@@ -159,6 +159,9 @@ export default {
 				".title": {
 					"@apply text-size-step-3 tracking-tight font-bold text-accent-2 leading-[1.1] !mb-5": {},
 				},
+        "body": {
+          "@apply text-size-step-0": {},
+        }
 			});
 		}),
 		// Add base styles for existing Martina font variants and new Family font variants.
