@@ -156,7 +156,7 @@ export default {
 					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline": {},
 				},
 				".title": {
-					"@apply text-size-step-3 tracking-tight font-bold text-accent-2 leading-[1.2] !mb-5": {},
+					"@apply text-size-step-3 tracking-tight font-normal text-accent-2 leading-[1.1] !mb-5": {},
 				},
 			});
 		}),
