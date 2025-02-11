@@ -44,7 +44,6 @@ export default {
 				'size-step-4': 'clamp(2.4624rem, 1.9001rem + 2.8117vw, 4.2725rem)',
 				'size-step-5': 'clamp(2.9549rem, 2.2137rem + 3.7059vw, 5.3406rem)',
 				'size-step-6': 'clamp(3.5459rem, 2.5735rem + 4.8619vw, 6.6757rem)',
-				base: "var(--size-step-0, 1rem)",
 			},
 			screens: {
 				print: { raw: "print" },
