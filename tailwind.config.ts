@@ -34,17 +34,17 @@ export default {
 	},
 	theme: {
 		extend: {
-      fontSize: {
-        'size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
-        'size-step--1': 'clamp(.9896rem, .8621rem + .6375vw, 1.4rem)',
-        'size-step-0': 'clamp(1.1875rem, 1.0127rem + .8738vw, 1.75rem)',
-        'size-step-1': 'clamp(1.425rem, 1.1881rem + 1.1845vw, 2.1875rem)',
-        'size-step-2': 'clamp(1.71rem, 1.3917rem + 1.5913vw, 2.7344rem)',
-        'size-step-3': 'clamp(2.052rem, 1.6276rem + 2.1219vw, 3.418rem)',
-        'size-step-4': 'clamp(2.4624rem, 1.9001rem + 2.8117vw, 4.2725rem)',
-        'size-step-5': 'clamp(2.9549rem, 2.2137rem + 3.7059vw, 5.3406rem)',
-        'size-step-6': 'clamp(3.5459rem, 2.5735rem + 4.8619vw, 6.6757rem)',
-      },
+			fontSize: {
+				'size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
+				'size-step--1': 'clamp(.9896rem, .8621rem + .6375vw, 1.4rem)',
+				'size-step-0': 'clamp(1.1875rem, 1.0127rem + .8738vw, 1.75rem)',
+				'size-step-1': 'clamp(1.425rem, 1.1881rem + 1.1845vw, 2.1875rem)',
+				'size-step-2': 'clamp(1.71rem, 1.3917rem + 1.5913vw, 2.7344rem)',
+				'size-step-3': 'clamp(2.052rem, 1.6276rem + 2.1219vw, 3.418rem)',
+				'size-step-4': 'clamp(2.4624rem, 1.9001rem + 2.8117vw, 4.2725rem)',
+				'size-step-5': 'clamp(2.9549rem, 2.2137rem + 3.7059vw, 5.3406rem)',
+				'size-step-6': 'clamp(3.5459rem, 2.5735rem + 4.8619vw, 6.6757rem)',
+			},
 			screens: {
 				print: { raw: "print" },
 				screen: { raw: "screen" },
@@ -138,10 +138,10 @@ export default {
 				},
 			},
 			fontFamily: {
-				// Set Martina as the main font for all font families
-				sans: ['"Martina"', ...fontFamilySans],
-				serif: ['"Martina"', ...fontFamilySerif],
-				mono: ['"Martina"', ...fontFamilyMono],
+				// Set Family as the main font for all font families
+				sans: ['"Family"', ...fontFamilySans],
+				serif: ['"Family"', ...fontFamilySerif],
+				mono: ['"Family"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -160,9 +160,10 @@ export default {
 				},
 			});
 		}),
-		// Add base styles for Martina font variants.
+		// Add base styles for existing Martina font variants and new Family font variants.
 		plugin(function ({ addBase }) {
 			addBase([
+				// Existing Martina font declarations
 				{
 					"@font-face": {
 						fontFamily: "Martina",
@@ -191,6 +192,71 @@ export default {
 					"@font-face": {
 						fontFamily: "Martina",
 						src: 'url(/fonts/MartinaPlantijn-BlackItalic.woff) format("woff")',
+						fontWeight: "700",
+						fontStyle: "italic",
+					},
+				},
+				// New Family font declarations
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-Light.woff2) format("woff2")',
+						fontWeight: "300",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-LightItalic.woff2) format("woff2")',
+						fontWeight: "300",
+						fontStyle: "italic",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-Regular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-RegularItalic.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "italic",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-Medium.woff2) format("woff2")',
+						fontWeight: "500",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-MediumItalic.woff2) format("woff2")',
+						fontWeight: "500",
+						fontStyle: "italic",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-Bold.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "normal",
+					},
+				},
+				{
+					"@font-face": {
+						fontFamily: "Family",
+						src: 'url(/fonts/Family-BoldItalic.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "italic",
 					},
