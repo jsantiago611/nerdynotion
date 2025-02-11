@@ -44,7 +44,7 @@ export default {
 				'size-step-4': 'clamp(2.4624rem, 1.9001rem + 2.8117vw, 4.2725rem)',
 				'size-step-5': 'clamp(2.9549rem, 2.2137rem + 3.7059vw, 5.3406rem)',
 				'size-step-6': 'clamp(3.5459rem, 2.5735rem + 4.8619vw, 6.6757rem)',
-        base: "var(--size-step-0, 1rem)",
+				base: "var(--size-step-0, 1rem)",
 			},
 			screens: {
 				print: { raw: "print" },
@@ -61,7 +61,7 @@ export default {
 					"txt-light": "#787774",
 					"txt-dark": "#9B9B9B",
 					"bg-light": "#F1F1EF",
-					"bg-dark": "#2F2F2F", // this is Notion's choice
+					"bg-dark": "#2F2F2F",
 					"bg-tag-light": "#E3E2E0",
 					"bg-tag-dark": "#5A5A5A",
 					"table-header-bg-light": "#F7F6F3",
@@ -139,7 +139,6 @@ export default {
 				},
 			},
 			fontFamily: {
-				// Set Family as the main font for all font families
 				sans: ['"Family"', ...fontFamilySans],
 				serif: ['"Family"', ...fontFamilySerif],
 				mono: ['"Family"', ...fontFamilyMono],
@@ -151,6 +150,22 @@ export default {
 	},
 	plugins: [
 		require("@tailwindcss/aspect-ratio"),
+		// Add CSS variables for font sizes
+		plugin(function({ addBase }) {
+			addBase({
+				':root': {
+					'--size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
+					'--size-step--1': 'clamp(.9896rem, .8621rem + .6375vw, 1.4rem)',
+					'--size-step-0': 'clamp(1.1875rem, 1.0127rem + .8738vw, 1.75rem)',
+					'--size-step-1': 'clamp(1.425rem, 1.1881rem + 1.1845vw, 2.1875rem)',
+					'--size-step-2': 'clamp(1.71rem, 1.3917rem + 1.5913vw, 2.7344rem)',
+					'--size-step-3': 'clamp(2.052rem, 1.6276rem + 2.1219vw, 3.418rem)',
+					'--size-step-4': 'clamp(2.4624rem, 1.9001rem + 2.8117vw, 4.2725rem)',
+					'--size-step-5': 'clamp(2.9549rem, 2.2137rem + 3.7059vw, 5.3406rem)',
+					'--size-step-6': 'clamp(3.5459rem, 2.5735rem + 4.8619vw, 6.6757rem)',
+				}
+			});
+		}),
 		plugin(function ({ addComponents }) {
 			addComponents({
 				".site-page-link": {
@@ -159,12 +174,11 @@ export default {
 				".title": {
 					"@apply text-size-step-3 tracking-tight font-bold text-accent-2 leading-[1.1] !mb-5": {},
 				},
-        "body": {
-          "@apply text-size-step--1": {},
-        }
+				"body": {
+					"@apply text-size-step--1": {},
+				}
 			});
 		}),
-		// Add base styles for existing Martina font variants and new Family font variants.
 		plugin(function ({ addBase }) {
 			addBase([
 				{
@@ -265,7 +279,6 @@ export default {
 				},
 			]);
 		}),
-		// Set the main body text to use var(--size-step-0)
 		plugin(function ({ addBase }) {
 			addBase({
 				body: {
