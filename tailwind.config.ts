@@ -178,131 +178,169 @@ export default {
 				}
 			});
 		}),
-		plugin(function ({ addBase }) {
-      addBase({
-        "@font-face": [
-          {
+    plugin(function ({ addBase }) {
+      addBase([
+        {
+          "@font-face": {
             fontFamily: "CalibreWeb-Light",
             src: "url('/fonts/CalibreWeb-Light.woff') format('woff')",
             fontWeight: "300",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "CalibreWeb-LightItalic",
             src: "url('/fonts/CalibreWeb-LightItalic.woff') format('woff')",
             fontWeight: "300",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "CalibreWeb-Medium",
             src: "url('/fonts/CalibreWeb-Medium.woff') format('woff')",
             fontWeight: "500",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "CalibreWeb-Regular",
             src: "url('/fonts/CalibreWeb-Regular.woff') format('woff')",
             fontWeight: "400",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "CalibreWeb-Semibold",
             src: "url('/fonts/CalibreWeb-Semibold.woff') format('woff')",
             fontWeight: "600",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Copernicus-Book",
             src: "url('/fonts/Copernicus-Book.woff') format('woff')",
             fontWeight: "400",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Copernicus-BookItalic",
             src: "url('/fonts/Copernicus-BookItalic.woff') format('woff')",
             fontWeight: "400",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "FoundersGroteskMonoWeb-Regular",
             src: "url('/fonts/FoundersGroteskMonoWeb-Regular.woff') format('woff')",
             fontWeight: "400",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Martina",
             src: 'url(/fonts/MartinaPlantijn-Light.woff) format("woff")',
             fontWeight: "400",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Martina",
             src: 'url(/fonts/MartinaPlantijn-LightItalic.woff) format("woff")',
             fontWeight: "400",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Martina",
             src: 'url(/fonts/MartinaPlantijn-Black.woff) format("woff")',
             fontWeight: "700",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Martina",
             src: 'url(/fonts/MartinaPlantijn-BlackItalic.woff) format("woff")',
             fontWeight: "700",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-Light.woff2) format("woff2")',
             fontWeight: "300",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-LightItalic.woff2) format("woff2")',
             fontWeight: "300",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-Regular.woff2) format("woff2")',
             fontWeight: "400",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-RegularItalic.woff2) format("woff2")',
             fontWeight: "400",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-Medium.woff2) format("woff2")',
             fontWeight: "500",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-MediumItalic.woff2) format("woff2")',
             fontWeight: "500",
             fontStyle: "italic",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-Bold.woff2) format("woff2")',
             fontWeight: "700",
             fontStyle: "normal",
           },
-          {
+        },
+        {
+          "@font-face": {
             fontFamily: "Family",
             src: 'url(/fonts/Family-BoldItalic.woff2) format("woff2")',
             fontWeight: "700",
             fontStyle: "italic",
           },
-        ]
-      });
+        },
+      ]);
     });
 		plugin(function ({ addBase }) {
 			addBase({
