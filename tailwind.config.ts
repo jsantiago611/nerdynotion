@@ -138,9 +138,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Calibre"', ...fontFamilySans],
-				serif: ['"Martina"', ...fontFamilySerif],
-				mono: ['"Martina"', ...fontFamilyMono],
+				sans: ['"Earth"', ...fontFamilySans],
+				serif: ['"Earth"', ...fontFamilySerif],
+				mono: ['"Earth"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -312,6 +312,22 @@ export default {
 					"@font-face": {
 						fontFamily: "Calibre",
 						src: 'url(/fonts/CalibreWeb-Semibold.woff) format("woff")',
+						fontWeight: "700",
+						fontStyle: "regular",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Earth",
+						src: 'url(/fonts/SharpEarthOLPE-Regular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "regular",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Earth",
+						src: 'url(/fonts/SharpEarthOLPE-Bold.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "regular",
 					},
