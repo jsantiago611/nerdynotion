@@ -300,7 +300,7 @@ export default {
             src: 'url(/fonts/Family-BoldItalic.woff2) format("woff2")',
             fontWeight: "700",
             fontStyle: "italic",
-          }
+          },
         ]
       });
     });
