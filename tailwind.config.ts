@@ -327,6 +327,14 @@ export default {
         {
 					"@font-face": {
 						fontFamily: "Earth",
+						src: 'url(/fonts/SharpEarthOLPE-Italic.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "italic",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Earth",
 						src: 'url(/fonts/SharpEarthOLPE-Bold.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "regular",
