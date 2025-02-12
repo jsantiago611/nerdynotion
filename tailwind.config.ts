@@ -138,7 +138,7 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Martina"', ...fontFamilySans],
+				sans: ['"Calibre"', ...fontFamilySans],
 				serif: ['"Martina"', ...fontFamilySerif],
 				mono: ['"Martina"', ...fontFamilyMono],
 			},
@@ -274,6 +274,46 @@ export default {
 						src: 'url(/fonts/Family-BoldItalic.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "italic",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Calibre",
+						src: 'url(/fonts/CalibreWeb-Light.woff) format("woff")',
+						fontWeight: "300",
+						fontStyle: "normal",
+					},
+				},
+         {
+					"@font-face": {
+						fontFamily: "Calibre",
+						src: 'url(/fonts/CalibreWeb-LightItalic.woff) format("woff")',
+						fontWeight: "300",
+						fontStyle: "italic",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Calibre",
+						src: 'url(/fonts/CalibreWeb-Regular.woff) format("woff")',
+						fontWeight: "400",
+						fontStyle: "regular",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Calibre",
+						src: 'url(/fonts/CalibreWeb-Medium.woff) format("woff")',
+						fontWeight: "500",
+						fontStyle: "regular",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Calibre",
+						src: 'url(/fonts/CalibreWeb-Semibold.woff) format("woff")',
+						fontWeight: "700",
+						fontStyle: "regular",
 					},
 				},
 			]);
