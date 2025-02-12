@@ -139,7 +139,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['"Earth"', ...fontFamilySans],
-				serif: ['"Earth"', ...fontFamilySerif],
+				serif: ['"SharpSerif"', ...fontFamilySerif],
 				mono: ['"Earth"', ...fontFamilyMono],
 			},
 			transitionProperty: {
@@ -330,6 +330,39 @@ export default {
 						src: 'url(/fonts/SharpEarthOLPE-Bold.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "regular",
+					},
+				},
+
+        {
+					"@font-face": {
+						fontFamily: "SharpSerif",
+						src: 'url(/fonts/Sharp Serif Text-Regular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "regular",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "SharpSerif",
+						src: 'url(/fonts/Sharp Serif Text-Italic.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "italic",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "SharpSerif",
+						src: 'url(/fonts/Sharp Serif Text-Bold.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "regular",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "SharpSerif",
+						src: 'url(/fonts/Sharp Serif Text-Bold Italic.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "italic",
 					},
 				},
 			]);
