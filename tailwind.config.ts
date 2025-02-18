@@ -176,7 +176,7 @@ export default {
 				"body": {
 					"@apply text-size-step--1": {},
 				},
-        ".text-2xl": {
+        ".text-xl": {
           "@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
         },
 			});
