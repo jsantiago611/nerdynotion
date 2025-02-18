@@ -335,7 +335,7 @@ export default {
         {
 					"@font-face": {
 						fontFamily: "Earth",
-						src: 'url(/fonts/BradfordLLWeb-Light (2).woff2) format("woff2")',
+						src: 'url(/fonts/BradfordLLWeb-Light.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "regular",
 					},
