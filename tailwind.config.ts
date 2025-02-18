@@ -177,11 +177,8 @@ export default {
 					"@apply text-size-step--1": {},
 				},
         ".text-2xl": {
-          "@apply text-size-step-3 tracking-[-0.08ch] leading-[1.1]": {},
+          "@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
         },
-        ".text-2xl": {
-          "@apply !text-[var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
-        }
 			});
 		}),
     plugin(function ({ addBase }) {
