@@ -340,7 +340,14 @@ export default {
 						fontStyle: "regular",
 					},
 				},
-
+        {
+					"@font-face": {
+						fontFamily: "Earth",
+						src: 'url(/fonts/BradfordLLWeb-LightItalic.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "italic",
+					},
+				},
         {
 					"@font-face": {
 						fontFamily: "SharpSerif",
