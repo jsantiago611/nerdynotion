@@ -180,8 +180,7 @@ export default {
           "@apply text-size-step-3 tracking-[-0.08ch] leading-[1.1]": {},
         },
         ".text-2xl": {
-          "font-size": "var(--size-step-3)", // Use the variable for 2xl class
-          "@apply tracking-[-0.08ch] leading-[1.1]": {},
+          "@apply !text-[var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
         }
 			});
 		}),
