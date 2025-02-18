@@ -176,9 +176,9 @@ export default {
 				"body": {
 					"@apply text-size-step--1": {},
 				},
-        ".text-xl": {
-          "@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
-        },
+        //".text-xl": {
+          //"@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
+        //},
 			});
 		}),
     plugin(function ({ addBase }) {
