@@ -138,9 +138,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Earth"', ...fontFamilySans],
-				serif: ['"SharpSerif"', ...fontFamilySerif],
-				mono: ['"Earth"', ...fontFamilyMono],
+				sans: ['"Concrette"', ...fontFamilySans],
+				serif: ['"Concrette"', ...fontFamilySerif],
+				mono: ['"Concrette"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -373,6 +373,30 @@ export default {
 						src: 'url(/fonts/Sharp Serif Text-Bold.woff2) format("woff2")',
 						fontWeight: "700",
 						fontStyle: "regular",
+					},
+				},
+         {
+					"@font-face": {
+						fontFamily: "Concrette",
+						src: 'url(/fonts/Dazzed-Heavy.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "regular",
+					},
+				},
+         {
+					"@font-face": {
+						fontFamily: "Concrette",
+						src: 'url(/fonts/ConcretteM-Regular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "regular",
+					},
+				},
+         {
+					"@font-face": {
+						fontFamily: "Concrette",
+						src: 'url(/fonts/ConcretteM-RegularItalic.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "italic",
 					},
 				},
         {
