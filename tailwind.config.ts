@@ -174,7 +174,7 @@ export default {
 					"@apply text-size-step-4 tracking-[-0.03ch] font-bold text-accent-2 leading-[1.1] !mb-5": {},
 				},
 				"body": {
-					"@apply text-size-step--1": {},
+					"@apply text-size-step-0": {},
 				},
         //".text-xl": {
           //"@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
