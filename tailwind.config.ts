@@ -411,14 +411,14 @@ export default {
 					"@font-face": {
 						fontFamily: "SharpRoman",
 						src: 'url(/fonts/SharpRomanReg.woff2) format("woff2")',
-						fontStyle: "normal",
+						fontStyle: "italic",
 					},
 				},
         {
 					"@font-face": {
 						fontFamily: "SharpRoman",
 						src: 'url(/fonts/SharpRomanItalic.woff2) format("woff2")',
-						fontStyle: "italic",
+						fontStyle: "normal",
 					},
 				},
 			]);
