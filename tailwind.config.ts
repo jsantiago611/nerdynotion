@@ -411,6 +411,15 @@ export default {
 					"@font-face": {
 						fontFamily: "SharpRoman",
 						src: 'url(/fonts/SharpRomanReg.woff2) format("woff2")',
+            fontWeight: "700",
+						fontStyle: "italic",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "SharpRoman",
+						src: 'url(/fonts/SharpRomanReg.woff2) format("woff2")',
+            fontWeight: "400",
 						fontStyle: "italic",
 					},
 				},
@@ -418,6 +427,15 @@ export default {
 					"@font-face": {
 						fontFamily: "SharpRoman",
 						src: 'url(/fonts/SharpRomanItalic.woff2) format("woff2")',
+            fontWeight: "700",
+						fontStyle: "normal",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "SharpRoman",
+						src: 'url(/fonts/SharpRomanItalic.woff2) format("woff2")',
+            fontWeight: "400",
 						fontStyle: "normal",
 					},
 				},
