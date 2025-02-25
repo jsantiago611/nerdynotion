@@ -138,9 +138,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Concrette"', ...fontFamilySans],
-				serif: ['"Concrette"', ...fontFamilySerif],
-				mono: ['"Concrette"', ...fontFamilyMono],
+				sans: ['"SharpRoman"', ...fontFamilySans],
+				serif: ['"SharpRoman"', ...fontFamilySerif],
+				mono: ['"SharpRoman"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -171,7 +171,7 @@ export default {
 					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline": {},
 				},
 				".title": {
-					"@apply text-size-step-4 tracking-[-0.03ch] font-bold text-accent-2 leading-[1.1] !mb-5": {},
+					"@apply text-size-step-4 uppercase tracking-[-0.03ch] font-bold text-accent-2 leading-[1.1] !mb-5": {},
 				},
 				"body": {
 					"@apply text-size-step-0": {},
@@ -404,6 +404,20 @@ export default {
 						fontFamily: "SharpSerif",
 						src: 'url(/fonts/Sharp Serif Text-Bold Italic.woff2) format("woff2")',
 						fontWeight: "700",
+						fontStyle: "italic",
+					},
+				},
+         {
+					"@font-face": {
+						fontFamily: "SharpRoman",
+						src: 'url(/fonts/SharpRomanReg.woff2) format("woff2")',
+						fontStyle: "normal",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "SharpRoman",
+						src: 'url(/fonts/SharpRomanItalic.woff2) format("woff2")',
 						fontStyle: "italic",
 					},
 				},
