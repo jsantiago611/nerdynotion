@@ -138,9 +138,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"SharpRoman"', ...fontFamilySans],
-				serif: ['"SharpRoman"', ...fontFamilySerif],
-				mono: ['"SharpRoman"', ...fontFamilyMono],
+				sans: ['"Martina"', ...fontFamilySans],
+				serif: ['"Martina"', ...fontFamilySerif],
+				mono: ['"Martina"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
