@@ -439,6 +439,22 @@ export default {
 						fontStyle: "normal",
 					},
 				},
+         {
+					"@font-face": {
+						fontFamily: "Espiritu-Regular",
+						src: 'url(/fonts/Espiritu-Regular.woff2) format("woff2")',
+            fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Espiritu-Script",
+						src: 'url(/fonts/Espiritu-Script.woff2) format("woff2")',
+            fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
 			]);
 		}),
 		plugin(function ({ addBase }) {
