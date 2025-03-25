@@ -138,9 +138,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Martina"', ...fontFamilySans],
-				serif: ['"Martina"', ...fontFamilySerif],
-				mono: ['"Martina"', ...fontFamilyMono],
+				sans: ['"Pitch"', ...fontFamilySans],
+				serif: ['"Pitch"', ...fontFamilySerif],
+				mono: ['"Pitch"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -451,6 +451,22 @@ export default {
 					"@font-face": {
 						fontFamily: "Espiritu-Script",
 						src: 'url(/fonts/Espiritu-Script.woff2) format("woff2")',
+            fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Pitch",
+						src: 'url(/fonts/PitchSansWeb-Medium.woff2) format("woff2")',
+            fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Pitch",
+						src: 'url(/fonts/PitchSansWeb-MediumItalic.woff2) format("woff2")',
             fontWeight: "400",
 						fontStyle: "normal",
 					},
