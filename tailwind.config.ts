@@ -468,7 +468,7 @@ export default {
 						fontFamily: "Pitch",
 						src: 'url(/fonts/PitchSansWeb-MediumItalic.woff2) format("woff2")',
             fontWeight: "400",
-						fontStyle: "normal",
+						fontStyle: "italic",
 					},
 				},
 			]);
