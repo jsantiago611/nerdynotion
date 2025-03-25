@@ -138,9 +138,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Pitch"', ...fontFamilySans],
-				serif: ['"Pitch"', ...fontFamilySerif],
-				mono: ['"Pitch"', ...fontFamilyMono],
+				sans: ['"Concrette"', ...fontFamilySans],
+				serif: ['"Concrette"', ...fontFamilySerif],
+				mono: ['"Concrette"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
