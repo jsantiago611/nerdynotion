@@ -171,7 +171,7 @@ export default {
 					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline": {},
 				},
 				".title": {
-					"@apply text-size-step-4 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
+					"@apply text-size-step-2 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
 				},
 				"body": {
 					"@apply text-size-step-0": {},
