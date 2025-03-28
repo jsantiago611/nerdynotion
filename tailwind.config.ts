@@ -184,7 +184,6 @@ export default {
     plugin(function ({ addBase }) {
 			addBase([
 				{
-          {
 					"@font-face": {
 						fontFamily: "Haffer",
 						src: 'url(/fonts/HafferMedium.woff2) format("woff2")',
