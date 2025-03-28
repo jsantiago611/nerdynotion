@@ -139,8 +139,8 @@ export default {
 			},
 			fontFamily: {
 				sans: ['"Haffer"', ...fontFamilySans],
-				serif: ['"Concrette"', ...fontFamilySerif],
-				mono: ['"Concrette"', ...fontFamilyMono],
+				serif: ['"Saans"', ...fontFamilySerif],
+				mono: ['"Saans"', ...fontFamilyMono],
 			},
 			transitionProperty: {
 				height: "height",
@@ -174,7 +174,7 @@ export default {
 					"@apply font-bold text-size-step-3 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
 				},
 				"body": {
-					"@apply text-size-step--1": {},
+					"@apply font-serif text-size-step--1": {},
 				},
         //".text-xl": {
           //"@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
@@ -215,11 +215,35 @@ export default {
 						fontStyle: "italic",
 					},
 				},
+         {
+					"@font-face": {
+						fontFamily: "Saans",
+						src: 'url(/fonts/SaansRegular.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "normal",
+					},
+				},
         {
 					"@font-face": {
-						fontFamily: "Martina",
-						src: 'url(/fonts/MartinaPlantijn-Light.woff) format("woff")',
+						fontFamily: "Saans",
+						src: 'url(/fonts/SaansRegularItalic.woff2) format("woff2")',
 						fontWeight: "400",
+						fontStyle: "italic",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Saans",
+						src: 'url(/fonts/SaansMedium.woff2) format("woff2")',
+						fontWeight: "500",
+						fontStyle: "normal",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "Saans",
+						src: 'url(/fonts/SaansBold.woff2) format("woff2")',
+						fontWeight: "700",
 						fontStyle: "normal",
 					},
 				},
