@@ -171,8 +171,15 @@ export default {
 		plugin(function ({ addComponents }) {
 			addComponents({
 				".site-page-link": {
-					"@apply underline decoration-from-font decoration-accent-2/20 hover:decoration-accent-2/40 underline-offset-2 hover:underline": {},
-				},
+          textDecorationLine: "underline",
+          textDecorationColor: "rgb(var(--theme-accent-2) / .2)",
+          textDecorationThickness: "from-font",
+          textUnderlineOffset: "2px",
+          fontSize: "var(--size-step-1)",
+          fontWeight: "400",
+          letterSpacing: "-0.03ch",
+          lineHeight: "1.1",
+        },
 				".title": {
 					"@apply font-bold text-size-step-3 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
 				},
