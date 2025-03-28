@@ -152,6 +152,9 @@ export default {
 		// Add CSS variables for font sizes
 		plugin(function({ addBase }) {
 			addBase({
+        'h1, h2, h3, h4, h5, h6': {
+          fontFamily: '"Haffer"', // Apply Haffer font to headers
+        },
 				':root': {
 					'--size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
 					'--size-step--1': 'clamp(.9896rem, .8621rem + .6375vw, 1.4rem)',
