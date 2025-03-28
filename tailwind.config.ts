@@ -190,7 +190,8 @@ export default {
 						fontWeight: "400",
 						fontStyle: "normal",
 					},
-            {
+        },
+        {
 					"@font-face": {
 						fontFamily: "Haffer",
 						src: 'url(/fonts/HafferMediumItalic.woff2) format("woff2")',
@@ -205,6 +206,7 @@ export default {
 						fontWeight: "700",
 						fontStyle: "normal",
 					},
+            },
             {
 					"@font-face": {
 						fontFamily: "Haffer",
@@ -213,6 +215,7 @@ export default {
 						fontStyle: "italic",
 					},
 				},
+        {
 					"@font-face": {
 						fontFamily: "Martina",
 						src: 'url(/fonts/MartinaPlantijn-Light.woff) format("woff")',
