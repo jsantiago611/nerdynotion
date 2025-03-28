@@ -38,7 +38,7 @@ const rss_path = getNavLink("/rss.xml");
 						<span class="sm:h-15 sm:w-15 me-3 h-10 w-10 sm:absolute sm:start-[-4.5rem] sm:me-0">
 							{siteInfo.logo.Emoji}
 						</span>
-						<span class="text-xl font-bold sm:text-2xl">{siteInfo.title}</span>
+						<span class="text-xl font-sans font-bold sm:text-2xl">{siteInfo.title}</span>
 					</>
 				) : siteInfo.logo && siteInfo.logo.Type === "external" ? (
 					<>
@@ -48,7 +48,7 @@ const rss_path = getNavLink("/rss.xml");
 							src={siteInfo.logo.Url}
 							alt="Site header image"
 						/>
-						<span class="text-xl font-bold sm:text-2xl">{siteInfo.title}</span>
+						<span class="text-xl font-sans font-bold sm:text-2xl">{siteInfo.title}</span>
 					</>
 				) : siteInfo.logo && siteInfo.logo.Type === "file" && customIconURL ? (
 					<>
@@ -58,10 +58,10 @@ const rss_path = getNavLink("/rss.xml");
 							class="sm:h-15 sm:w-15 me-3 h-10 w-10 object-contain sm:absolute sm:start-[-4.5rem] sm:me-0"
 							alt="Site header image"
 						/>
-						<span class="text-xl font-bold sm:text-2xl">{siteInfo.title}</span>
+						<span class="text-xl font-sans font-bold sm:text-2xl">{siteInfo.title}</span>
 					</>
 				) : (
-					<span class="text-xl font-bold sm:text-2xl">{siteInfo.title}</span>
+					<span class="text-xl font-sans font-bold sm:text-2xl">{siteInfo.title}</span>
 				)
 			}
 		</a>
