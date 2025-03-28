@@ -138,7 +138,7 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Concrette"', ...fontFamilySans],
+				sans: ['"Haffer"', ...fontFamilySans],
 				serif: ['"Concrette"', ...fontFamilySerif],
 				mono: ['"Concrette"', ...fontFamilyMono],
 			},
@@ -184,6 +184,36 @@ export default {
     plugin(function ({ addBase }) {
 			addBase([
 				{
+          {
+					"@font-face": {
+						fontFamily: "Haffer",
+						src: 'url(/fonts/HafferMedium.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "normal",
+					},
+            {
+					"@font-face": {
+						fontFamily: "Haffer",
+						src: 'url(/fonts/HafferMediumItalic.woff2) format("woff2")',
+						fontWeight: "400",
+						fontStyle: "italic",
+					},
+				},
+            {
+					"@font-face": {
+						fontFamily: "Haffer",
+						src: 'url(/fonts/HafferXHBold.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "normal",
+					},
+            {
+					"@font-face": {
+						fontFamily: "Haffer",
+						src: 'url(/fonts/HafferXHBoldItalic.woff2) format("woff2")',
+						fontWeight: "700",
+						fontStyle: "italic",
+					},
+				},
 					"@font-face": {
 						fontFamily: "Martina",
 						src: 'url(/fonts/MartinaPlantijn-Light.woff) format("woff")',
