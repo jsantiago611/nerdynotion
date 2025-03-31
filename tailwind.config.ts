@@ -181,7 +181,7 @@ export default {
           lineHeight: "1.1",
         },
 				".title": {
-					"@apply font-bold text-size-step-3 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
+					"@apply font-bold text-size-step-5 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
 				},
 				"body": {
 					"@apply font-serif text-size-step--1": {},
