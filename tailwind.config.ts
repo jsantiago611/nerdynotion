@@ -175,7 +175,6 @@ export default {
           textDecorationColor: "rgb(var(--theme-accent-2) / .2)",
           textDecorationThickness: "from-font",
           textUnderlineOffset: "2px",
-          fontSize: "var(--size-step-1)",
           fontWeight: "400",
           letterSpacing: "-0.03ch",
           lineHeight: "1.1",
@@ -184,7 +183,7 @@ export default {
 					"@apply font-bold text-size-step-5 tracking-[-0.03ch] text-accent-2 leading-[1.1] !mb-5": {},
 				},
 				"body": {
-					"@apply font-serif text-size-step--1": {},
+					"@apply font-serif text-size-step-0": {},
 				},
         //".text-xl": {
           //"@apply !text-[length:var(--size-step-3)] !tracking-[-0.08ch] !leading-[1.1]": {},
