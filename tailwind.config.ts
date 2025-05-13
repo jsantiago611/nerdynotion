@@ -155,6 +155,11 @@ export default {
         'h1, h2, h3, h4, h5, h6': {
           fontFamily: '"STKBureau"', 
         },
+        '.text-2xl': {
+          fontSize: "var(--size-step-4)",
+          lineHeight: "1",
+          letterSpacing: "-0.05ch",
+        },
 				':root': {
 					'--size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
 					'--size-step--1': 'clamp(.9896rem, .8621rem + .6375vw, 1.4rem)',
