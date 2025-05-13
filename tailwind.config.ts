@@ -153,7 +153,7 @@ export default {
 		plugin(function({ addBase }) {
 			addBase({
         'h1, h2, h3, h4, h5, h6': {
-          fontFamily: '"Haffer"', // Apply Haffer font to headers
+          fontFamily: '"STKBureau"', // Apply Haffer font to headers
         },
 				':root': {
 					'--size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
@@ -193,6 +193,12 @@ export default {
     plugin(function ({ addBase }) {
 			addBase([
 				{
+					"@font-face": {
+						fontFamily: "STKBureau",
+						src: 'url(/fonts/STKBureau-SerifLight.woff) format("woff")',
+					},
+				},
+        {
 					"@font-face": {
 						fontFamily: "Haffer",
 						src: 'url(/fonts/HafferMedium.woff2) format("woff2")',
