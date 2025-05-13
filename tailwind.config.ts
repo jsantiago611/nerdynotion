@@ -138,7 +138,7 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['"Haffer"', ...fontFamilySans],
+				sans: ['"Saans"', ...fontFamilySans],
 				serif: ['"Saans"', ...fontFamilySerif],
 				mono: ['"Saans"', ...fontFamilyMono],
 			},
@@ -155,7 +155,7 @@ export default {
         'h1, h2, h3, h4, h5, h6': {
           fontFamily: '"STKBureau"', 
         },
-        '.text-2xl': {
+        'text-2xl': {
           fontSize: "var(--size-step-4)",
           lineHeight: "1",
           letterSpacing: "-0.05ch",
