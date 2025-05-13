@@ -196,6 +196,14 @@ export default {
 					"@font-face": {
 						fontFamily: "STKBureau",
 						src: 'url(/fonts/STKBureau-SerifLight.woff) format("woff")',
+            fontWeight: "400",
+					},
+				},
+        {
+					"@font-face": {
+						fontFamily: "STKBureau",
+						src: 'url(/fonts/STKBureau-SerifLight.woff) format("woff")',
+            fontWeight: "700",
 					},
 				},
         {
