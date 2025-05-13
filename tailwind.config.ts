@@ -153,7 +153,22 @@ export default {
 		plugin(function({ addBase }) {
 			addBase({
         'h1, h2, h3, h4, h5, h6': {
-          fontFamily: '"STKBureau"', // Apply Haffer font to headers
+          fontFamily: '"STKBureau"', 
+        },
+        'h2': {
+              fontSize: "var(--size-step-4)",
+              lineHeight: "1.1",
+              letterSpacing: "-0.07ch",
+        },
+        'h3': {
+              fontSize: "var(--size-step-3)",
+              lineHeight: "1.1",
+              letterSpacing: "-0.07ch",
+        },
+        'h4': {
+              fontSize: "var(--size-step-2)",
+              lineHeight: "1.1",
+              letterSpacing: "-0.07ch",
         },
 				':root': {
 					'--size-step--2': 'clamp(.8247rem, .7329rem + .4588vw, 1.12rem)',
