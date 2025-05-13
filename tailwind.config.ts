@@ -185,6 +185,9 @@ export default {
         ".text-2xl": {
           "@apply !text-[length:var(--size-step-4)] !leading-[1] !tracking-[-0.05ch]": {},
         },
+        ".text-xl": {
+          "@apply !text-[length:var(--size-step-3)] !leading-[1] !tracking-[-0.05ch]": {},
+        },
 				"body": {
 					"@apply font-serif text-size-step-0": {},
 				},
